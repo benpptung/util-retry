@@ -1,0 +1,19 @@
+{
+  "name": "util-retry",
+  "version": "1.0.0",
+  "description": "A thin and lightweight wrapper for calling async function no more than specific times before returning an error",
+  "author": "Ben P.P. Tung",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/benpptung/util-retry.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "devDependencies": {
+    "expect.js": "^0.3.1",
+    "mocha": "^2.4.5"
+  }
+}
