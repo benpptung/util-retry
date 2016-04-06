@@ -1,6 +1,6 @@
 {
   "name": "util-retry",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A thin and lightweight wrapper for calling async function no more than specific times before returning an error",
   "author": "Ben P.P. Tung",
   "license": "MIT",

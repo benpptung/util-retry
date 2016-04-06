@@ -8,7 +8,7 @@ const retry = require('util-retry');
 
 restapi = retry(restapi);
 
-// Treat restapi as it is 
+// Treat restapi as it is. restapi will try 3 times before giving up
 restapi((err, res)=>{
   console.error(err):
   console.log(res.text);
