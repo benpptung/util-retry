@@ -1,4 +1,4 @@
-A thin and lightweight utilty to wrap an async function and makes it retryable. If all retires failed, the `last attampt error` will be sent back. 
+A very thin and lightweight utilty to wrap an async function and makes it retryable. If all retires failed, the `last attampt error` will be sent back. 
 
 # Example
 ```
@@ -45,13 +45,17 @@ var restapi = retry({times: 5, wait: 10000}, restapi);
 
 # retry([options], task)
 
+`retry` will return a function behaves as the original `task` funciton is, except it will retry if error happened based on the `options`. For example, if the task callback(null, res1, res2..). It will callback(null, res1, res2) too. 
+
 - `options`: `<Number>|<Object>`
   - times: Unsigned int. Retry limitation. Default: 3.
   - wait : Milliseconds. The interval time to wait between retries. Default: 0
   
   If options is a number, it means `times`
   
-- `task`
+- `task`: `<Function>`
 
-  Normal async function, nodejs style callback is always the last argument.
+  async function.
+  
+
  
