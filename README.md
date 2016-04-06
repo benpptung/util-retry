@@ -11,6 +11,30 @@ var request = retry(api); // try calling api function 3 times
 request({...options as required by the api}, callback );
 ```
 
+# Example #2
+```
+
+const request = require('superagent');
+const retry = require('util-retry');
+
+test = retry(test);
+
+// treat test function as it is 
+test((err, res)=>{
+  console.error(err):
+  console.log(res.text);
+});
+
+function test(done){
+
+  console.log('requesting...');
+  request.get('http://localhost:3000').end(done);
+}
+
+
+```
+
+
 # Other Examples
 
 ```
