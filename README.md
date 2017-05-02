@@ -1,5 +1,7 @@
 A very thin and lightweight utilty to wrap an async function and makes it retryable. If all retires failed, the `last attampt error` will be sent back. 
 
+See also [util-asyncflow](https://www.npmjs.com/package/util-asyncflow) - an async functions control flow utility
+
 # Example
 ```
 
